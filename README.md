@@ -1,4 +1,4 @@
-## HomeWork Tasks
+## HomeWork
 - Topic: For, while, do… while.
 - Topic: Recursion.
 - Topic: Standard data types string .
