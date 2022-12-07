@@ -12,21 +12,26 @@ public class Task_6 {
         Scanner s = new Scanner(System.in);
         System.out.print("n = ");
         double n = Double.parseDouble(s.next());
-        int k1 = 2;
-        int k2 = 2;
+        int k1 = 1;
+        int k2 = 1;
         double total = n;
-        while (total < 100){
-            n += n * 0.10;
-            total += n;
+        double dayRate = n/100;
 
-            if (total < 100){
+        while (total < 100 ){
+
+            n += n * dayRate;
+            total += n;
+            if (total <= 100){
                 k2++;
             }
             if (n < 20){
                 k1++;
             }
-
         }
+        if (n < 20 ){
+            k1++;
+        }
+        k2++;
         System.out.println("k1= " + k1);
         System.out.println("k2= " + k2);
     }
