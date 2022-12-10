@@ -18,7 +18,7 @@ public class Task_6 {
         double lastDistace = 0;
         int day = 1;
         System.out.println("day #" + day + " today distance = "+ n + " total = " + total);
-        while (n  < 20 ){
+        while (total < 100 || n < 20 ){
             day++;
             if (total <= 100){
                 k2++;
