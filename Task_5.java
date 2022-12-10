@@ -7,29 +7,24 @@ public class Task_5 {
         // in the sequence until a number greater than the specified n is entered .
 
         Scanner s = new Scanner(System.in);
-        System.out.print("n = ");
+        System.out.print("Count of integers n = ");
         int n = Integer.parseInt(s.next());
+        System.out.print("Write your number: ");
         int number = Integer.parseInt(s.next());
         int count = 0;
         int sum = 0;
 
-        while (true)
+        while (number <= n)
         {
-            count ++;
-
-            if (number < 0){
-                count --;
-            }
-            else if (number > n){
-                count--;
-                break;
-            }
-            else if(number <= n && number >= 0){
+            System.out.print("Write your number: ");
+            if (number > 0){
+                count++;
                 sum += number;
             }
             number = Integer.parseInt(s.next());
         }
-        double avg = sum/count;
+
+        double avg = (sum*0.1)/ (count*0.1);
         System.out.println("Average value: " + avg);
     }
 }
