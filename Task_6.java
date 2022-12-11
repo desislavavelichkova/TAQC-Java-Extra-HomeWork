@@ -15,29 +15,26 @@ public class Task_6 {
         int k1 = 1; // the days, when the athlete will run more than 20 km per day;
         int k2 = 1; // days, when distance is lower than 100km
         double total = n;
-        double lastDistace = 0;
         int day = 1;
         System.out.println("day #" + day + " today distance = "+ n + " total = " + total);
-        while (total <= 100 || n <= 20 ){
+
+        while (total <= 100 || n <= 20){
+
             day++;
-            if (total <= 100){
+            k1++;
+            if (n > 20){
+                k1++;
+            }
+            if (total <= 100)
+            {
                 k2++;
             }
-            if (n + lastDistace > 20){
-                k1++;
-            }
-            double dayRate = n * 0.1;
-            n = n + dayRate;
+            double distanceOfDay = n * 0.1;
+            n += distanceOfDay;
             total += n;
-            lastDistace = n;
-            if (n > 20)
-            {
-                System.out.println("n = " + n);
-                k1++;
-            }
-            System.out.println("day #" + day + " today distance = "+ (n + lastDistace) + " total = " + total);
+            System.out.println("day #" + day + " today distance = "+ n + " total = " + total);
         }
-        
+
         System.out.println("k1= " + k1);
         System.out.println("k2= " + k2);
     }
