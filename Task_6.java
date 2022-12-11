@@ -16,23 +16,20 @@ public class Task_6 {
         int k2 = 1; // days, when distance is lower than 100km
         double total = n;
         int day = 1;
-        System.out.println("day #" + day + " today distance = "+ n + " total = " + total);
+        System.out.println("day #" + day + " today distance = " + n + " total = " + total);
 
-        while (total <= 100 || n <= 20){
-
+        while (total <= 100 || n <= 20) {
             day++;
-            k1++;
-            if (n > 20){
+            if (n <= 20) {
                 k1++;
             }
-            if (total <= 100)
-            {
+            if (total <= 100) {
                 k2++;
             }
             double distanceOfDay = n * 0.1;
             n += distanceOfDay;
             total += n;
-            System.out.println("day #" + day + " today distance = "+ n + " total = " + total);
+            System.out.println("day #" + day + " today distance = " + n + " total = " + total);
         }
 
         System.out.println("k1= " + k1);
