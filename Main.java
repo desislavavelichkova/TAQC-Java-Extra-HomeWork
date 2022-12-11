@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Recurtion {
     public static void main(String[] args) {
         //1.Write a recursive function Sum to determine the sum of n numbers.
         //	Incoming data: n = 5 .
