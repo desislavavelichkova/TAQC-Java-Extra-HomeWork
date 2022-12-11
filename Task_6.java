@@ -30,13 +30,14 @@ public class Task_6 {
             n = n + dayRate;
             total += n;
             lastDistace = n;
+            if (n > 20)
+            {
+                System.out.println("n = " + n);
+                k1++;
+            }
             System.out.println("day #" + day + " today distance = "+ (n + lastDistace) + " total = " + total);
         }
-        if (n > 20)
-        {
-            System.out.println("n = " + n);
-            k1++;
-        }
+        
         System.out.println("k1= " + k1);
         System.out.println("k2= " + k2);
     }
