@@ -7,4 +7,3 @@
 #### Topic: Class as a data type.
 #### Topic: Constructor - object initialization form.
 #### Topic: Class inheritance mechanism.
-
