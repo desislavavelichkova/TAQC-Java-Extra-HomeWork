@@ -1,4 +1,9 @@
- ## Description
- Write a recursive function Sum to determine the sum of n numbers.
- Incoming data: n = 5 .
- Output data: Amount = 15 .
+# SoftServe Java homework
+
+#### Topic: For, while, do… while.
+#### Topic: Recursion.
+#### Topic: Standard data types string.
+#### Topic: Standard data types Dictionary, List.
+#### Topic: Class as a data type.
+#### Topic: Constructor - object initialization form.
+#### Topic: Class inheritance mechanism.
